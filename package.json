@@ -23,5 +23,8 @@
     "superagent": "^2.3.0",
     "webpack": "^1.13.3",
     "webpack-node-externals": "^1.5.4"
+  },
+  "devDependencies": {
+    "dotenv": "^2.0.0"
   }
 }
