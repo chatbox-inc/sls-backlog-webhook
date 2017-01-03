@@ -82,7 +82,7 @@ const handleAddWiki = (backlog)=>{
     const url = "alias/wiki/" + backlog.content.id
 
     const pretext = `Wikiの追加 by ${user}`
-    const title = `[${projectKey} - ${keyId}}]`
+    const title = `[${projectKey} - ${keyId}]`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
@@ -100,7 +100,7 @@ const handleUpdateWiki = (backlog)=>{
     const url = "alias/wiki/" + backlog.content.id
 
     const pretext = `Wikiの更新 by ${user}`
-    const title = `[${projectKey} - ${keyId}}]`
+    const title = `[${projectKey} - ${keyId}]`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
