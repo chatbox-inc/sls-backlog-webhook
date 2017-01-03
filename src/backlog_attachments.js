@@ -74,15 +74,15 @@ const handleAddWiki = (backlog)=>{
 
     const projectKey = backlog.project.projectKey;
     const keyId = backlog.content.key_id || backlog.content.name;
-    const summary = backlog.content.summary;
     const user = backlog.createdUser.name;
     const body = (backlog.content.comment)?
         backlog.content.comment.content:
         backlog.content.description;
-    const url = `view/${projectKey}-${keyId}`
+    // https://chatboxinc.backlog.jp/alias/wiki/42405
+    const url = "alias/wiki/" + backlog.content.id
 
     const pretext = `Wikiの追加 by ${user}`
-    const title = `[${projectKey} - ${keyId}}] - ${summary}`
+    const title = `[${projectKey} - ${keyId}}]`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
@@ -92,15 +92,15 @@ const handleUpdateWiki = (backlog)=>{
 
     const projectKey = backlog.project.projectKey;
     const keyId = backlog.content.key_id || backlog.content.name;
-    const summary = backlog.content.summary;
     const user = backlog.createdUser.name;
     const body = (backlog.content.comment)?
         backlog.content.comment.content:
         backlog.content.description;
-    const url = `view/${projectKey}-${keyId}`
+    // https://chatboxinc.backlog.jp/alias/wiki/42405
+    const url = "alias/wiki/" + backlog.content.id
 
     const pretext = `Wikiの更新 by ${user}`
-    const title = `[${projectKey} - ${keyId}}] - ${summary}`
+    const title = `[${projectKey} - ${keyId}}]`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
