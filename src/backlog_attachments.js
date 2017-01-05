@@ -20,7 +20,7 @@ const handleAddTask = (backlog)=>{
     const url = `view/${projectKey}-${keyId}`
 
     const pretext = `課題の追加 by ${user}`
-    const title = `[${projectKey} - ${keyId}}] - ${summary}`
+    const title = `[${projectKey} - ${keyId}] - ${summary}`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
@@ -36,7 +36,7 @@ const handleUpdateTask = (backlog)=>{
     const url = `view/${projectKey}-${keyId}`
 
     const pretext = `課題の追加 by ${user}`
-    const title = `[${projectKey} - ${keyId}}] - ${summary}`
+    const title = `[${projectKey} - ${keyId}] - ${summary}`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     let text = "";
     backlog.content.changesf.forEach((item)=>{
@@ -64,7 +64,7 @@ const handleDelTask = (backlog)=>{
     const url = `view/${projectKey}-${keyId}`
 
     const pretext = `課題の削除 by ${user}`
-    const title = `[${projectKey} - ${keyId}}] - ${summary}`
+    const title = `[${projectKey} - ${keyId}] - ${summary}`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
@@ -118,7 +118,7 @@ const handleAddFile = (backlog)=>{
     const url = `view/${projectKey}-${keyId}`
 
     const pretext = `ファイルの追加 by ${user}`
-    const title = `[${projectKey} - ${keyId}}] - ${summary}`
+    const title = `[${projectKey} - ${keyId}] - ${summary}`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
@@ -136,7 +136,7 @@ const handleDelFile = (backlog)=>{
     const url = `view/${projectKey}-${keyId}`
 
     const pretext = `ファイルの削除 by ${user}`
-    const title = `[${projectKey} - ${keyId}}] - ${summary}`
+    const title = `[${projectKey} - ${keyId}] - ${summary}`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
@@ -154,7 +154,7 @@ const handleDefault = (backlog)=>{
     const url = `view/${projectKey}-${keyId}`
 
     const pretext = `その他の処理 by ${user}`
-    const title = `[${projectKey} - ${keyId}}] - ${summary}`
+    const title = `[${projectKey} - ${keyId}] - ${summary}`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     const text = body;
 
