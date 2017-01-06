@@ -39,7 +39,7 @@ const handleUpdateTask = (backlog)=>{
     const title = `[${projectKey} - ${keyId}] - ${summary}`
     const title_link = "http://chatboxinc.backlog.jp/" + url;
     let text = "";
-    backlog.content.changesf.forEach((item)=>{
+    backlog.content.changes.forEach((item)=>{
         if(item.field === "status"){
             text = text + "課題のステータスが更新されました。\n";
         }else if(item.field === "description"){
